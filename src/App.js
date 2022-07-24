@@ -1,10 +1,16 @@
+import {Users} from "./components";
+import {Posts} from "./components/Posts/Posts";
+import {useState} from "react";
 
 function App() {
-  return (
-    <div>
+    const [idForGetPost, setIdForGetPost] = useState(null);
 
-    </div>
-  );
+    return (
+        <div>
+            <Users setIdForGetPost={setIdForGetPost}/>
+            <Posts idForGetPost={idForGetPost}/>
+        </div>
+    );
 }
 
 export default App;
