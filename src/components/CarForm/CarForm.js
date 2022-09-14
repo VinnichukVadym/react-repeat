@@ -1,12 +1,19 @@
+import {useEffect, useState} from "react";
 import {useForm} from "react-hook-form";
+import {joiResolver} from "@hookform/resolvers/joi";
 
 import {carsService} from "../../services";
-import {useEffect, useState} from "react";
+import {carValidator} from "../../validators";
 
 const CarForm = ({setNewCar, updateCar, setUpdatedCar, setUpdateCar}) => {
-    const [error, setError] = useState([]);
+    // const [errors, setErrors] = useState({});
 
-    const {handleSubmit, reset, register, setValue} = useForm();
+    const {handleSubmit, reset, register, setValue, formState: {errors}} = useForm(
+        {
+        resolver: joiResolver(carValidator),
+        mode: "onTouched"
+    }
+    );
 
     useEffect(() => {
         if (updateCar) {
@@ -31,19 +38,22 @@ const CarForm = ({setNewCar, updateCar, setUpdatedCar, setUpdateCar}) => {
             reset();
 
         } catch (e) {
-            setError(e.response.data);
+            // setErrors(e.response.data);
         }
     }
 
     return (
         <form onSubmit={handleSubmit(mySubmit)}>
             <div><label>Model: <input type="text" {...register('model')}/></label></div>
-            {error.model && <span>{error.model[0]}</span>}
+            {/*{errors.model && <span>{errors.model[0]}</span>}*/}
+            {errors.model && <span>{errors.model.message}</span>}
             <div><label>Price: <input type="text" {...register('price', {valueAsNumber: true})}/></label></div>
-            {error.price && <span>{error.price[0]}</span>}
+            {/*{errors.price && <span>{errors.price[0]}</span>}*/}
+            {errors.price && <span>{errors.price.message}</span>}
             <div><label>Year: <input type="text" {...register('year', {valueAsNumber: true})}/></label></div>
-            {error.year && <span>{error.year[0]}</span>}
-            <button>{updateCar?'Update':'Create'}</button>
+            {/*{errors.year && <span>{errors.year[0]}</span>}*/}
+            {errors.year && <span>{errors.year.message}</span>}
+            <button>{updateCar ? 'Update' : 'Create'}</button>
         </form>
     );
 };
