@@ -1,0 +1,15 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 45px;
+    background: blue;
+}
+.wrapper a{
+    text-decoration: none;
+    color: white;
+}
+
+.wrapper a[class=active]{
+    color: red;
+}
