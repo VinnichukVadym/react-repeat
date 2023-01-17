@@ -1,0 +1,15 @@
+.card{
+    background: black;
+    color: yellow;
+    flex: 25%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+img{
+    padding-top: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}

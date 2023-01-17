@@ -1,8 +1,10 @@
+import {Simpsons,Characters} from "./components";
 
 const App = () => {
     return (
         <div>
-            App
+            <Characters/>
+            <Simpsons/>
         </div>
     );
 };

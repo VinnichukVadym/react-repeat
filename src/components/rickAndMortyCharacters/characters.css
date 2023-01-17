@@ -1,0 +1,17 @@
+.title2 {
+    text-align: center;
+    background: blue;
+    color: #fff;
+    border-radius: 50px;
+    width: 50vw;
+    margin: 20px auto;
+    padding: 20px 0;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 50px 30px 150px;
+}

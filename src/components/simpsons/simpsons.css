@@ -1,0 +1,13 @@
+body{
+    background: yellow;
+}
+
+.title{
+    text-align: center;
+    background: red;
+    color: #fff;
+    border-radius: 50px;
+    width: 50vw;
+    margin: 20px auto;
+    padding: 20px 0;
+}
