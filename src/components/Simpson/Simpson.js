@@ -1,5 +1,5 @@
 import React from 'react';
-import './simpson.css';
+import './Simpson.css';
 
 export const Simpson = ({name, age, gender, img, description}) => {
     return (

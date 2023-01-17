@@ -1,7 +1,7 @@
 import React from 'react';
 
-import {Character} from "../rickAndMortyCharacter/character";
-import './characters.css';
+import {Character} from "../RickAndMortyCharacter/Character";
+import './Characters.css';
 
 export const Characters = () => {
 

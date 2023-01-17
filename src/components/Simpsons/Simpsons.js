@@ -1,7 +1,7 @@
 import React from 'react';
 
-import {Simpson} from "../simpson/simpson";
-import './simpsons.css';
+import {Simpson} from "../Simpson/Simpson";
+import './Simpsons.css';
 
 export const Simpsons = () => {
 

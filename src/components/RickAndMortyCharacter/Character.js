@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './character.css';
+import './Character.css';
 
 
 export const Character = ({id, name, status, species, gender, image}) => {
