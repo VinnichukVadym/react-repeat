@@ -1,0 +1,21 @@
+.userDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    background: cornflowerblue;
+    padding: 20px;
+    width: 400px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+
+.userDetails>div{
+    background: red;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 50px;
+    font-size: 20px;
+}

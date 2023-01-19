@@ -1,8 +1,10 @@
+import {Users,Launches} from "./components";
 
 const App = () => {
     return (
         <div>
-            App
+            <Users/>
+            <Launches/>
         </div>
     );
 };

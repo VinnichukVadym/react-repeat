@@ -1,0 +1,7 @@
+.spaceX {
+    display: flex;
+    flex-wrap: wrap;
+    background: url("https://wallpaper.dog/large/20353650.jpg") fixed;
+    color: white;
+    justify-content: center;
+}
