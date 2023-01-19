@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 
-import {spaceXService} from "../../services/spaceX.service";
+import {spaceXService} from "../../services";
 import {Launch} from "../Launch/Launch";
 import style from "./Launches.module.css";
 
@@ -13,7 +13,8 @@ const Launches = () => {
 
     return (
         <div className={style.spaceX}>
-            {launches.filter(value => value.launch_year !== '2020').map(launch => <Launch key={launch.flight_number} launch={launch}/>)}
+            {launches.filter(value => value.launch_year !== '2020').map(launch => <Launch key={launch.flight_number}
+                                                                                          launch={launch}/>)}
         </div>
     );
 };

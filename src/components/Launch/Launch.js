@@ -1,10 +1,7 @@
-import React from 'react';
 import style from "./Launch.module.css";
 
-
-
 const Launch = ({launch}) => {
-    let {flight_number, mission_name,launch_year,links:{mission_patch_small}} = launch;
+    let {flight_number, mission_name, launch_year, links: {mission_patch_small}} = launch;
 
     return (
         <div className={style.card}>

@@ -1,4 +1,4 @@
-import {axiosServiceSpaceX_URL} from "./axiosService";
+import {axiosServiceSpaceX_URL} from "./axios.service";
 import {urls} from "../constants";
 
 const spaceXService = {
