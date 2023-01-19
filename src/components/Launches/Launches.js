@@ -13,8 +13,11 @@ const Launches = () => {
 
     return (
         <div className={style.spaceX}>
-            {launches.filter(value => value.launch_year !== '2020').map(launch => <Launch key={launch.flight_number}
-                                                                                          launch={launch}/>)}
+            {
+                launches
+                    .filter(value => value.launch_year !== '2020')
+                    .map(launch => <Launch key={launch.flight_number} launch={launch}/>)
+            }
         </div>
     );
 };
