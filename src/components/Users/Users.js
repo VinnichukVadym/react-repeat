@@ -5,7 +5,7 @@ import {UserDetails} from "../UserDetails/UserDetails";
 import {userService} from "../../services";
 import css from './Users.module.css';
 
-const Users = () => {
+const Users = ({setUserIdForPosts}) => {
     let [users, setUsers] = useState([]);
     let [userId, setUserId] = useState(null);
     let [user, setUser] = useState(null);
@@ -24,10 +24,10 @@ const Users = () => {
     return (
         <div className={css.placeholder}>
             <div className={css.users}>
-                {users.map(user => <User key={user.id} id={user.id} name={user.name} setUserId={setUserId}/>)}
+                {users.map(user => <User key={user.id} id={user.id} name={user.name} setUserId={setUserId} setUserIdForPosts={setUserIdForPosts}/>)}
             </div>
 
-            {user && <UserDetails user={user}/>}
+            {user && <UserDetails user={user} setUserIdForPosts={setUserIdForPosts}/>}
         </div>
     );
 };

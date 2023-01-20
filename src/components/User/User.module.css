@@ -18,3 +18,9 @@
     border-radius: 20px;
     padding: 5px 30px;
 }
+
+.btn:hover{
+    cursor: pointer;
+    transition: 1s;
+    scale: 120%;
+}
