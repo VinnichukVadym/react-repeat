@@ -1,7 +1,6 @@
 import {useEffect, useState} from 'react';
 
-import {User} from "../User/User";
-import {UserDetails} from "../UserDetails/UserDetails";
+import {User, UserDetails} from "../index.js";
 import {userService} from "../../services";
 import css from './Users.module.css';
 
@@ -24,7 +23,8 @@ const Users = ({setUserIdForPosts}) => {
     return (
         <div className={css.placeholder}>
             <div className={css.users}>
-                {users.map(user => <User key={user.id} id={user.id} name={user.name} setUserId={setUserId} setUserIdForPosts={setUserIdForPosts}/>)}
+                {users.map(user => <User key={user.id} id={user.id} name={user.name} setUserId={setUserId}
+                                         setUserIdForPosts={setUserIdForPosts}/>)}
             </div>
 
             {user && <UserDetails user={user} setUserIdForPosts={setUserIdForPosts}/>}
