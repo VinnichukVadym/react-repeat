@@ -1,0 +1,11 @@
+.post{
+    background: yellow;
+    padding:10px  ;
+    margin: 10px;
+    text-align: justify;
+}
+
+.post h2{
+    text-align: center;
+    margin: 0;
+}

@@ -1,0 +1,12 @@
+.comment {
+    background: cornflowerblue;
+    text-align: center;
+    width: 50vw;
+    padding: 10px;
+    margin: 10px;
+}
+
+.comment a{
+    text-decoration: none;
+    color: black;
+}
