@@ -4,7 +4,6 @@ import css from './Main.layouts.module.css';
 import {Sidebar} from "../../components";
 
 const MainLayout = () => {
-
     return (
         <div className={css.main}>
             <Sidebar/>

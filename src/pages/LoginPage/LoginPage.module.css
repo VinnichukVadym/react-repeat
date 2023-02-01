@@ -1,0 +1,76 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 100vh;
+
+}
+
+.content {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    min-height: 500px;
+    min-width: 500px;
+}
+
+.content:before {
+    content: '';
+    border: 3px solid blueviolet;
+    position: absolute;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    rotate: 45deg;
+    z-index: -1;
+}
+
+.content:hover:before {
+    -webkit-box-shadow: 0 0 56px 19px rgba(26, 199, 156, 1);
+    -moz-box-shadow: 0 0 56px 19px rgba(26, 199, 156, 1);
+    box-shadow: 0 0 56px 19px rgba(26, 199, 156, 1);
+}
+
+.username {
+    width: 350px;
+    height: 40px;
+    border-radius: 40px;
+    border: 3px solid aqua;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    background: blueviolet;
+
+}
+
+.username::placeholder {
+    opacity: 0.5;
+    color: black;
+}
+
+.username:focus {
+    outline: 2px solid black;
+    -webkit-box-shadow: 0 0 56px 19px rgba(26, 199, 156, 1);
+    -moz-box-shadow: 0 0 56px 19px rgba(26, 199, 156, 1);
+    box-shadow: 0 0 56px 19px rgba(26, 199, 156, 1);
+}
+
+.btn {
+    background: blueviolet;
+    font-size: 26px;
+    padding: 5px 40px;
+    border-radius: 40px;
+    border: 3px solid aqua;
+
+}
+
+.btn:hover {
+    -webkit-box-shadow: 0 0 56px 19px rgba(26, 199, 156, 1);
+    -moz-box-shadow: 0 0 56px 19px rgba(26, 199, 156, 1);
+    box-shadow: 0 0 56px 19px rgba(26, 199, 156, 1);
+}

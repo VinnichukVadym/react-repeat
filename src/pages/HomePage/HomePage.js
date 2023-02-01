@@ -1,8 +1,7 @@
 const HomePage = () => {
-
     return (
-        <div>
-            <h2>Welcome to APP</h2>
+        <div style={{margin:"auto"}}>
+            <h1>Welcome to APP</h1>
         </div>
     );
 };
