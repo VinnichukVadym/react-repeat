@@ -1,0 +1,17 @@
+.header {
+    background: blueviolet;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.header a[class='active'] {
+    color: black;
+}
