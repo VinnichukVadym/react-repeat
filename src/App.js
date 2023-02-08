@@ -1,8 +1,11 @@
+import {SelectedUser, Users} from "./components";
 
 const App = () => {
     return (
         <div>
-            App
+            <SelectedUser/>
+            <hr/>
+            <Users/>
         </div>
     );
 };
